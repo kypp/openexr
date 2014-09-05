@@ -12,6 +12,10 @@
 //
 
 #if defined(OPENEXR_DLL)
+#undef OPENEXR_DLL
+#endif
+
+#if defined(OPENEXR_DLL)
     #if defined(HALF_EXPORTS)
     #define HALF_EXPORT __declspec(dllexport)
     #else
